@@ -125,7 +125,6 @@ footer{
 }
 
 footer p{
-    border: 1px solid red;
     font-size: 1.1rem;
     font-weight: bold;
     font-family: var(--interRegular);

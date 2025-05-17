@@ -1,11 +1,18 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(../font/Inter.ttf);
+}
+
 :root {
   --dourado-100: #D9BB62;
   --dourado-200: #D9B166;
   --dourado-300: #BF9A56;
-
   --withe: #FFFFFF;
   --black: #000000;
+  --interRegular: 'Inter';
+  --interBold: 'Inter';
 }
+
 body{
     margin: 0;
     padding: 0;
@@ -15,3 +22,4 @@ body{
     width: 100%;
     height: 10px;
 }
+

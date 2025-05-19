@@ -177,7 +177,7 @@ a:hover{
 #confira{
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 250px;
   height: 60px;
   font-size: 20px;
@@ -186,19 +186,36 @@ a:hover{
   border: 0;
 }
 #confira a{
-  margin-left: 15%;
+  margin-left: 30%;
   color: var(--black);
   font-family: var(--interBold);
   font-size: 1.5rem;
 }
 #confira i{
-  font-size: 15px;
+  margin-right: 10%;
+  margin-top: 8px;
+  font-size: 30px;
 }
 #confira:hover{
   background: var(--dourado-300);
   cursor: pointer;
   transition: 0.1s;
 }
+
+.animated-arrow {
+  display: inline-block;
+  animation: slideRight 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(8px);
+  }
+};
+
 
 /* footer */
 

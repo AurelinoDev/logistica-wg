@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/serviços.css">
     <title>Serviços</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="../favicon_io/site.webmanifest">
+</head>
 </head>
 <body>
       <header>
-        <img src="../img/logo.png">
+        <a href="index.html"><img src="../img/logo.png"></a>
+
         <ul>
             <a href="index.html">Inicio</a>
             <a href="sobre-nos.html">Sobre Nós</a>
@@ -16,5 +23,45 @@
             <a href="#">Contato</a>
         </ul>
     </header>
+
+    <main>
+
+      <div class="container">
+        <div class="servico">
+          <img src="../img/serviço2.png">
+        </div>
+      </div>
+        
+    <div class="container2">
+      <button class="botao" onclick="mostrarTexto('servicos')">Nossos Serviços</button>
+      <p id="servicos" class="descricao"></p>
+
+      <button class="botao" onclick="mostrarTexto('logistica')">Acompanhamento Logístico</button>
+      <p id="logistica" class="descricao"></p>
+
+      <button class="botao" onclick="mostrarTexto('pronta')">Pronta-Resposta</button>
+      <p id="pronta" class="descricao"></p>
+
+      <button class="botao" onclick="mostrarTexto('sindicancia')">Sindicância de Roubo</button>
+      <p id="sindicancia" class="descricao"></p>
+
+      <button class="botao" onclick="mostrarTexto('investigacao')">Investigação de Sinistro</button>
+      <p id="investigacao" class="descricao"></p>
+
+      <button class="botao" onclick="mostrarTexto('inteligencia')">Operações de Inteligência</button>
+      <p id="inteligencia" class="descricao"></p>
+
+      <button class="botao" onclick="mostrarTexto('regulacao')">Regulação de Sinistros</button>
+      <p id="regulacao" class="descricao"></p>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
+
+
+
+
+    </main>
 </body>
 </html>

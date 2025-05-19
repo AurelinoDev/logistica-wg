@@ -3,6 +3,11 @@
 *{
     margin: 0;
 }
+@font-face {
+    font-family: 'Inter';
+    src: url(../font/Inter.ttf);
+}
+
 
 :root {
   --dourado-100: #D9BB62;
@@ -10,4 +15,65 @@
   --dourado-300: #BF9A56;
   --withe: #FFFFFF;
   --black: #000000;
+}
+
+.container{
+  /* border: 1px solid red; */
+  width: 100%;
+  min-height: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.servico{
+  margin-top: 50px;
+  /* border: 1px solid red; */
+  max-width: 1180px;
+  max-height: 410px;
+  padding-bottom: 50px;
+}
+.servico img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container2 {
+  max-width: 1020px;
+  margin: auto;
+}
+
+.botao {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: var(--withe);
+  border: 1px solid var(--black);
+  color: var(--dourado-300);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  min-height: 60px; 
+}
+
+
+.descricao {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+  padding: 0 10px;
+  font-size: 20px;
+  margin-bottom: 0;
+  border-left: 3px solid var(--dourado-100);
+  background-color: #f9f9f9;
+}
+
+.descricao.ativa {
+  margin-top: -20px;
+  /* border: 1px solid red; */
+  max-height: 500px;
+  padding: 10px;
+  margin-bottom: 20px;
 }

@@ -10,8 +10,11 @@
   --dourado-100: #D9BB62;
   --dourado-200: #D9B166;
   --dourado-300: #BF9A56;
+  --cinza-400: #D9D9D9;
   --withe: #FFFFFF;
   --black: #000000;
+  --interRegular: 'Inter';
+  --interBold: 'Inter';
 }
 body{
   margin: 0;
@@ -150,6 +153,7 @@ a:hover{
   margin-top: 50px;
   width: 1340px;
   height: 500px;
+  margin-bottom: 100px;
 }
 
 .informacoes {
@@ -157,7 +161,7 @@ a:hover{
   align-items: center;
   flex-direction: column;
   text-align: center;
-  border: 1px solid #D9D9D9;
+  border: 1px solid var(--cinza-400);
   border-radius: 25px;
   width: 390px;
   height: 500px;
@@ -206,6 +210,22 @@ a:hover{
   display: inline-block;
   animation: slideRight 0.6s ease-in-out infinite alternate;
 }
+/* footer */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    height: 120px;
+}
+
+footer p{
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: var(--interRegular);
+    color: var(--dourado-100);
+}
 
 @keyframes slideRight {
   from {
@@ -215,32 +235,3 @@ a:hover{
     transform: translateX(8px);
   }
 };
-
-
-/* footer */
-
-footer{
-  margin-top: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--dourado-100);
-  background-color: #000;
-  height: 120px;
-  font-size: 1.2rem;
-  --withe: #FFFFFF;
-  --black: #000000;
-  --interRegular: 'Inter';
-  --interBold: 'Inter';
-}
-
-body{
-    margin: 0;
-    padding: 0;
-}
-.topo{
-    border: 1px solid red;
-    width: 100%;
-    height: 10px;
-}
-

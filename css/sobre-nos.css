@@ -1,28 +1,8 @@
 
 @import url(index.css);
+
 *{
     margin: 0;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url(../font/Inter.ttf);
-}
-
-:root{
-    --interRegular: 'Inter', light;
-    --interBold: 'Inter', bold;
-}
-
-header{
-    background-color: #000;
-    border: 1px solid red;
-    height: 140px;
-}
-
-ul li{
-    color: #fff;
-    border: 1px solid red;
 }
 
 main{
@@ -38,7 +18,7 @@ main{
     width: 61rem;
     height: 201px;
     border-radius: 25px;
-    border: 3px solid red;
+    border: 2px solid var(--dourado-300);
 }
 
 .icone-titulo{
@@ -73,7 +53,7 @@ main{
     width: 60rem;
     height: 50px;
     border-radius: 25px;
-    border: 2px solid red;
+    border: 2px solid var(--dourado-300);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,10 +76,20 @@ main{
     align-items: center;
     justify-content: center;
     border-radius: 25px;
-    border: 2px solid red;
+    border: 2px solid var(--dourado-300);
 }
 
 footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #000;
     height: 120px;
+}
+
+footer p{
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: var(--interRegular);
+    color: var(--dourado-100);
 }

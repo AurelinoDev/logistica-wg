@@ -1,0 +1,13 @@
+@import url(index.css);
+
+*{
+    margin: 0;
+}
+
+:root {
+  --dourado-100: #D9BB62;
+  --dourado-200: #D9B166;
+  --dourado-300: #BF9A56;
+  --withe: #FFFFFF;
+  --black: #000000;
+}

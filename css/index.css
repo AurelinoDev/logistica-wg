@@ -1,10 +1,7 @@
-@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
-
 @font-face {
     font-family: 'Inter';
     src: url(../font/Inter.ttf);
 }
-
 
 :root {
   --dourado-100: #D9BB62;
@@ -16,13 +13,13 @@
   --interRegular: 'Inter';
   --interBold: 'Inter';
 }
+
 body{
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
-
-
 }
+
 /* * {
   outline: 1px solid limegreen;
 } */
@@ -50,9 +47,11 @@ ul{
   align-items: center;
   gap: 40px;
   list-style: none;
+  font-size: 1.2rem;
   font-weight: bold;
   margin-right: 60px;
 }
+
 a{
   text-decoration: none;
   font-size: 1.2rem;
@@ -212,11 +211,14 @@ a:hover{
 /* footer */
 
 footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #000;
-    height: 120px;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dourado-100);
+  background-color: #000;
+  height: 120px;
+  font-size: 1.2rem;
 }
 
 footer p{

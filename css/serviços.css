@@ -2,10 +2,6 @@
 *{
     margin: 0;
 }
-@import url(index.css);
-*{
-    margin: 0;
-}
 @font-face {
     font-family: 'Inter';
     src: url(../font/Inter.ttf);

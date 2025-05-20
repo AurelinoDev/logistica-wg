@@ -6,34 +6,16 @@
 
 header{
     background-color: #000;
-    border: 1px solid red;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     height: 140px;
-}
-
-.imagem-logo{
-    /* border: 1px solid red; */
-    width: 150px;
-    height: 150px;
-    background-image: url(../img/logo.png);
-    background-size: cover;
-}
-
-nav{
-    width: 450px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-evenly;
-    font-family: var(--interBold);
-    font-weight: bolder;
-    border: 1px solid red;
 }
 
 a{
     color: var(--dourado-100);
     font-size: 1.2rem;
+    font-weight: bold;
     text-decoration: none;
     transition: 0.1s;
 }
@@ -43,6 +25,15 @@ a:hover{
     transition: 0.1s;
 }
 
+:root {
+  --dourado-100: #D9BB62;
+  --dourado-200: #D9B166;
+  --dourado-300: #BF9A56;
+  --withe: #FFFFFF;
+  --black: #000000;
+  --interRegular: 'Inter';
+  --interBold: 'Inter';
+}
 
 main{
     width: 100%;
@@ -53,11 +44,20 @@ main{
     flex-direction: column;
 }
 
+.secao-informacao{
+    width: 100%;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .informacao{
     width: 61rem;
     height: 201px;
     border-radius: 25px;
     border: 2px solid var(--dourado-300);
+    animation: animacao-opacidade 1s normal;
 }
 
 .icone-titulo{
@@ -75,6 +75,7 @@ main{
     align-items: center;
     justify-content: center;
     border-top-left-radius: 21px;
+    animation: animacao-opacidade 1s normal;
 }
 
 .titulo{
@@ -88,6 +89,15 @@ main{
     margin: 10px 0px 0px 5px;
 }
 
+.secao-valores{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
 .valores{
     width: 60rem;
     height: 50px;
@@ -96,6 +106,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: animacao-opacidade 0.5s normal;
 }
 
 #topicos-valores{
@@ -116,6 +127,8 @@ main{
     justify-content: center;
     border-radius: 25px;
     border: 2px solid var(--dourado-300);
+    animation: animacao-opacidade 1s normal;
+
 }
 
 footer{
@@ -131,4 +144,13 @@ footer p{
     font-weight: bold;
     font-family: var(--interRegular);
     color: var(--dourado-100);
+}
+
+@keyframes animacao-opacidade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }

@@ -153,7 +153,6 @@ a:hover{
   height: 500px;
   margin-bottom: 100px;
 }
-
 .informacoes {
   display: flex;
   align-items: center;
@@ -164,44 +163,49 @@ a:hover{
   width: 390px;
   height: 500px;
 }
-.informacoes img{
+
+.informacoes img {
   padding-top: 25px;
   padding-left: 70px;
   padding-right: 70px;
   width: 250px;
   height: 306px;
 }
-.informacoes p{
+
+.informacoes p {
   font-size: 24px;
-  color: rgb(0, 0, 0, 47%);
+  color: rgba(0, 0, 0, 0.47); /* corrigido para uso padrão de RGBA */
   font-weight: bold;
 }
-#confira{
+
+/* BOTÃO-LINK "CONFIRA" */
+.confira {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 250px;
   height: 60px;
-  font-size: 20px;
+  font-size: 1.5rem;
   background: var(--dourado-100);
   border-radius: 40px;
-  border: 0;
-}
-#confira a{
-  margin-left: 30%;
   color: var(--black);
   font-family: var(--interBold);
-  font-size: 1.5rem;
+  text-decoration: none;
+  transition: background 0.2s ease;
 }
-#confira i{
-  margin-right: 10%;
-  margin-top: 8px;
-  font-size: 30px;
-}
-#confira:hover{
+
+.confira:hover {
+  color: var(--black);
   background: var(--dourado-300);
   cursor: pointer;
-  transition: 0.1s;
+}
+
+/* Ícone dentro do botão */
+.confira i {
+  font-size: 30px;
+  margin-top: 8px;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
 }
 
 .animated-arrow {

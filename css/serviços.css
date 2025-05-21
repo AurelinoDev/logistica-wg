@@ -57,13 +57,22 @@
   font-size: 25px;
   text-align: center;
   box-sizing: border-box;
-  min-height: 60px; 
+  min-height: 60px;
+  transition: background 0.2s ease;
+}
+
+.botao:hover{
+  background: var(--cinza-400);
 }
 
 .botao span{
   position: absolute;
   right: 25px;
   color: var(--black);
+}
+
+.botao span:hover{
+  color: var(--dourado-300);
 }
 
 .descricao {

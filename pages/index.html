@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="../css/index.css">
     <title>Inicio</title>
 
-	<link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+	<!-- <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png"> -->
 	<link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
 	<link rel="manifest" href="../favicon_io/site.webmanifest">
+	<!-- <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png"> -->
+	<!-- <link rel="manifest" href="../favicon_io/site.webmanifest"> -->
 </head>
 <body>
 
@@ -36,41 +38,36 @@
 
 	<main>
 
-		<div class="slider">
-			<div class="slides">
+		
+  <div class="slider">
+    <!-- Radios -->
+    <input type="radio" name="radio-btn" id="radio1" checked>
+    <input type="radio" name="radio-btn" id="radio2">
+    <input type="radio" name="radio-btn" id="radio3">
 
-				<input type="radio" name="radio-btn" id="radio1">
-				<input type="radio" name="radio-btn" id="radio2">
-				<input type="radio" name="radio-btn" id="radio3">
+    <!-- Slides -->
+    <div class="slides">
+      <div class="slide">
+        <img src="../img/caminhao.jpg" alt="Caminhão">
+        <h1>Na estrada ou na cidade, sua carga estará segura.</h1>
+      </div>
+      <div class="slide">
+        <img src="../img/caminhao.jpg" alt="Slide 2">
+        <h1>Tecnologia e confiança para te levar mais longe.</h1>
+      </div>
+      <div class="slide">
+        <img src="../img/caminhao.jpg" alt="Slide 3">
+        <h1>Juntos, acelerando o futuro da logística.</h1>
+      </div>
+    </div>
 
-				<div class="slide first">
-					<img src="../img/caminhao.jpg">
-				<!-- <h1>Na estrada ou na cidade, sua carga estará segura.</h1> -->
-				</div>
-
-				<div class="slide">
-					<img src="../img/imagem2.jpg">
-				</div>
-
-				<div class="slide">
-					<img src="../img/imagem3.jpg">
-				</div>
-
-				<div class="navigation-auto">
-					<div class="auto-btn1"></div>
-					<div class="auto-btn2"></div>
-					<div class="auto-btn3"></div>
-				</div>
-
-				<div class="manual-navigation">
-					<label for="radio1" class="manual-btn"></label>
-					<label for="radio2" class="manual-btn"></label>
-					<label for="radio3" class="manual-btn"></label>
-				</div> 
-			
-      	</div> <!--Fim div Slides-->
-
-    	</div> <!--Fim div Slider-->
+    <!-- Navegação Manual -->
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+	  </div>
+  </div>
 
 			<div class="saiba">
 				<h1>Saiba Mais</h1>
@@ -115,6 +112,6 @@
 			WG Consultoria e Monitoramento - 2025 © todos os direitos reservados
 		</p>
     </footer>
-		<script src="../js/script.js"></script>
+		<script src="../js/index.js"></script>
 </body>
 </html>

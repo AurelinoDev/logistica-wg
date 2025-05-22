@@ -104,14 +104,7 @@ header{
   font-size: 30px;
 } */
 
-/* #WhatsApp-fixed a img{
-  width: 50px;
-}
-#WhatsApp-fixed a img{
-  /* width: 50px;
-  position: fixed;
-  right: 1%;
-} */
+
 
 /* Código de Lucas */
 .botao-contato{
@@ -152,4 +145,13 @@ header{
 
 .icone i{
   margin-top: -1px;
+}
+
+#WhatsApp-fixed a img{
+  width: 50px;
+}
+#WhatsApp-fixed a img{
+  width: 50px;
+  position: fixed;
+  right: 1%;
 }

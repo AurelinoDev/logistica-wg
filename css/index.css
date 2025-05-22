@@ -30,9 +30,15 @@ header{
   background-color: #000;
   height: 140px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+}
 
+.imagem-responsiva{
+  width: 140px;
+  height: 140px;
+  background-image: url(../img/logo.png);
+  background-size: cover;
 }
 
 header img{

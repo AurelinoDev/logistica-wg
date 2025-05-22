@@ -11,12 +11,25 @@
 
 /* css contato */
 
-.imagem-responsiva, .menu-responsivo{
+.menu-responsivo{
   display: none;
 }
 
 header > ul > a{
   text-decoration: none;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.imagem-responsiva{
+  width: 140px;
+  height: 140px;
+  background-image: url(../img/logo.png);
+  background-size: cover;
 }
 
 #text-localizacao {
@@ -33,14 +46,13 @@ header > ul > a{
   border-radius: 20px;
 }
 
-#localizacao {
+#localizacao{
   display: flex;
   align-items: center;
   justify-content: center; 
 }
 
-#text-contato {
-  /* border: 1px solid red; */
+#text-contato{
   height: 50vh;
   margin-top: 80px;
   width: 100%;
@@ -128,7 +140,7 @@ header > ul > a{
 }
 
 .icone{
-  width: 80px;
+  width: 70px;
   height: 38px;
   display: flex;
   align-items: center;
@@ -139,5 +151,5 @@ header > ul > a{
 }
 
 .icone i{
-  margin-top: 5px;
+  margin-top: -1px;
 }

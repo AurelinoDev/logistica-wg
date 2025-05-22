@@ -28,15 +28,41 @@
 
 	<main>
 
-		<div class="slide">
-			<div class="image-container">
-			<img src="../img/caminhao.jpg">
-			<h1>Na estrada ou na cidade, sua carga estará segura.</h1>
+		<div class="slider">
+			<div class="slides">
+
+				<input type="radio" name="radio-btn" id="radio1">
+				<input type="radio" name="radio-btn" id="radio2">
+				<input type="radio" name="radio-btn" id="radio3">
+
+				<div class="slide first">
+					<img src="../img/caminhao.jpg">
+				<!-- <h1>Na estrada ou na cidade, sua carga estará segura.</h1> -->
+				</div>
+
+				<div class="slide">
+					<img src="../img/imagem2.jpg">
+				</div>
+
+				<div class="slide">
+					<img src="../img/imagem3.jpg">
+				</div>
+
+				<div class="navigation-auto">
+					<div class="auto-btn1"></div>
+					<div class="auto-btn2"></div>
+					<div class="auto-btn3"></div>
+				</div>
+
+				<div class="manual-navigation">
+					<label for="radio1" class="manual-btn"></label>
+					<label for="radio2" class="manual-btn"></label>
+					<label for="radio3" class="manual-btn"></label>
+				</div> 
 			
-            <button id="prev"> < </button>
-            <button id="next"> > </button>
-      </div>
-    </div>
+      	</div> <!--Fim div Slides-->
+
+    	</div> <!--Fim div Slider-->
 
 			<div class="saiba">
 				<h1>Saiba Mais</h1>
@@ -81,5 +107,6 @@
 			WG Consultoria e Monitoramento - 2025 © todos os direitos reservados
 		</p>
     </footer>
+		<script src="../js/script.js"></script>
 </body>
 </html>

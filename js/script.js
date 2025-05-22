@@ -1,3 +1,20 @@
+// Index
+let count = 1;
+document.getElementById("radio1").checked = true;
+
+setInterval(function(){
+  nextImage();
+}, 3000)
+
+function nextImage(){
+  count++;
+  if(count>3){
+    count = 1;
+  }
+  document.getElementById("radio"+count).checked = true;
+}
+
+// Página Serviços
 const textos = {
   servicos:`Conheça nossos serviços especializados em segurança empresarial e proteção patrimonial.
             Oferecemos soluções eficazes que vão desde o acompanhamento logístico até investigações de sinistros e operações de inteligência. Nossa missão é proteger seus ativos e assegurar a continuidade do seu negócio.

@@ -66,6 +66,8 @@ header > ul > a{
 
 /* #text-contato a {
   border: 1px solid red;
+}
+#text-contato a {
   background-color: #000;
   padding: 10px;
   text-decoration: none;
@@ -92,6 +94,9 @@ header > ul > a{
 
 /* #WhatsApp-fixed a img{
   width: 50px;
+}
+#WhatsApp-fixed a img{
+  /* width: 50px;
   position: fixed;
   right: 1%;
 } */

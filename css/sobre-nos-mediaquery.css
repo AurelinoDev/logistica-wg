@@ -1,11 +1,20 @@
 @media screen and (max-width: 490px){   
-    nav, ul > a{
+    nav, ul, a{
         display: none;
     }
 
     header{
         width: 100%;
         justify-content: center;
+    }
+
+    .imagem-responsiva{
+        display: flex;
+        width: 120px;
+        height: 120px;
+        border: 1px solid red;
+        background-image: url(../img/logo.png);
+        background-size: cover;
     }
 
     main{

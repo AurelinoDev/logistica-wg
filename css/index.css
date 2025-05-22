@@ -27,11 +27,11 @@ body{
 /* Inicio */
 
 header{
-    background-color: #000;
-    height: 140px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #000;
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
 }
 

@@ -1,7 +1,11 @@
 @import url(index.css);
 
-*{
-    margin: 0;
+.imagem-responsiva, .menu-responsivo{
+    display: none;
+}
+
+nav, ul, a{
+    display: flex;
 }
 
 header{
@@ -38,6 +42,7 @@ a:hover{
 main{
     width: 100%;
     height: 200vh;
+    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -53,8 +58,8 @@ main{
 }
 
 .informacao{
-    width: 61rem;
-    height: 201px;
+    width: 65rem;
+    height: 250px;
     border-radius: 25px;
     border: 2px solid var(--dourado-300);
     animation: animacao-opacidade 1s normal;
@@ -66,32 +71,40 @@ main{
     align-items: center;
     margin: 15px 0px 0px 0px;
     border-radius: 25px 25px 0px 0px;
+    /* border: 1px solid red; */
 }
 
 .icone{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
+    color: #000;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top-left-radius: 21px;
     animation: animacao-opacidade 1s normal;
+    margin: -1px 0px 0px 44px;
+    /* border: 1px solid red; */
 }
 
 .titulo{
+    font-size: 1.6rem;
     font-family: var(--interBold);
     margin-left: 10px;
 }
 
 .descricao-titulo{
+    /* border: 1px solid red; */
     font-family: var(--interRegular);
-    font-size: 1.2rem;
-    margin: 10px 0px 0px 5px;
+    font-size: 1.4rem;
+    width: 90%;
+    margin: 10px 0px 0px 60px;
 }
 
 .secao-valores{
     width: 100%;
     height: 350px;
+    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -99,7 +112,7 @@ main{
 }
 
 .valores{
-    width: 60rem;
+    width: 65rem;
     height: 50px;
     border-radius: 25px;
     border: 2px solid var(--dourado-300);
@@ -110,16 +123,17 @@ main{
 }
 
 #topicos-valores{
-    width: 60rem;
+    width: 65rem;
     height: 200px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: -20px;
+    margin-top: 20px;
+    /* border: 1px solid red; */
 }
 
 .topico{
     font-family: var(--interRegular);
-    width: 28rem;
+    width: 30rem;
     margin: 20px 0px 20px 20px;
     height: 50px;
     display: flex;

@@ -63,67 +63,99 @@ a:hover{
   transition: 0.1s;
 }
 
-/* imagens */
+/* slides */
+
+.slider {
+  margin: 50px auto;
+  width: 1200px;
+  height: 608px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 620px;
+  display: flex;
+}
+.slides input {
+  display: none;
+}
 
 .slide {
+  width: 25%;
+  position: relative;
+}
+
+.slide img {
+  width: 1200px ;
+  height: 608px;
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 1200px;
+  top: 107%;
   display: flex;
   justify-content: center;
-  padding: 50px 75px;
+  align-items: center;
 }
 
-.image-container {
-  position: relative;
-  max-width: 100%;
-  width: 100%;
-  max-width: 1340px;
-}
-
-.image-container img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.image-container h1 {
-  position: absolute;
-  bottom: 10%;
-  width: 97%;
-  margin: 0;
-  padding: 15px;
-  background-color: rgba(0, 0, 0, 0); /* transparente */
-  color: #fff;
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-#prev, #next {
-  display: none;
-  position: absolute;
-  top: 55%;
-  transform: translateY(-50%);
+.manual-btn {
+  border: 2px solid var(--dourado-100);
   width: 50px;
-  height: 50px;
-  background-color: #eee9;
-  border: 1px solid #eee9;
-  color: var(--withe);
-  font-size: 24px;
-  text-align: center;
+  padding: 3px;
+  border-radius: 10px;
   cursor: pointer;
-  border-radius: 50%;
+  transition: 1s;
+}
+.manual-btn:hover {
+  background: var(--withe);
 }
 
-#prev {
-  left: 20px;
+.manual-btn:not(:last-child){
+  margin-right: 8px;
 }
 
-#next {
-  right: 20px;
+#radio:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+#radio3:checked ~ .first{
+  margin-left: -50%;
 }
 
-.image-container:hover #prev,
-.image-container:hover #next {
-  display: block;
-  transition: 0.1s;
+.navigation-auto div{
+  border: 2px solid var(--dourado-300);
+  width: 50px;
+  padding: 3px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto {
+  position: absolute;
+  top: 107%;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 8px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: var(--withe);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color: var(--withe);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background-color: var(--withe);
 }
 
 /* saiba mais */

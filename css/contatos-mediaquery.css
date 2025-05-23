@@ -30,8 +30,14 @@
         color: var(--dourado-300);
     }
 
+    main{
+        min-height: 90vh;
+        max-height: 100vh;
+        /* border: 1px solid red; */
+    }
+
     #text-localizacao{
-        margin: 20px 0px 10px 0px;
+        margin: 30px 0px 5px 0px;
         font-size: 0.7rem;
     }
 
@@ -47,7 +53,16 @@
         border-radius: 20px;
     }
 
+    #text-contato{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        /* border: 1px solid red; */
+    }
+
     #text-contato h2 {
+        margin-top: 50px;
         font-size: 1.2rem;
     }
 
@@ -70,6 +85,4 @@
         font-size: 0.9rem;
         font-weight: normal;
     }
-
-
 } 

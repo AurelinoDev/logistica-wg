@@ -1,20 +1,33 @@
 @media screen and (max-width: 490px){
-    header a,header a > img, ul{
+
+    ul{
         display: none;
     }
 
     header{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .imagem-responsiva{
-        width: 120px;
-        height: 120px;
-        border: 1px solid red;
+        display: flex;
+        width: 140px;
+        height: 140px;
         background-image: url(../img/logo.png);
         background-size: cover;
+        margin: 0px 0px 0px 20px;
+    }
+
+    .menu-responsivo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 20px 0px 0px;
+        width: 50px;
+        height: 50px;
+        font-size: 1.7rem;
+        color: var(--dourado-300);
     }
 
     #text-localizacao{

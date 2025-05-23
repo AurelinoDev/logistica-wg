@@ -1,20 +1,34 @@
 @media screen and (max-width: 490px){   
-    nav, ul, a{
+    nav, ul{
         display: none;
     }
 
     header{
         width: 100%;
-        justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .imagem-responsiva{
         display: flex;
-        width: 120px;
-        height: 120px;
-        border: 1px solid red;
+        width: 140px;
+        height: 140px;
         background-image: url(../img/logo.png);
         background-size: cover;
+        margin: 0px 0px 0px 20px;
+    }
+
+    .menu-responsivo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 20px 0px 0px;
+        width: 50px;
+        height: 50px;
+        font-size: 1.7rem;
+        /* border: 1px solid red; */
+        color: var(--dourado-300);
     }
 
     main{
@@ -38,15 +52,16 @@
 
     .titulo, .icone{
         margin: 0px 3px 0px 3px;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .descricao-titulo{
-        width: fit-content;
+        width: 90%;
         height: fit-content;
         text-align: center;
-        font-size: 0.7rem;
-        margin: 10px 0px 0px 0px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        margin: 10px 20px 0px 20px;
     }
 
     .secao-valores{
@@ -66,6 +81,7 @@
         scale: 0.9;
         margin: 15px 0px 15px 0px;
         height: 50px;
+        font-weight: bold;
         display: flex;
         align-items: center;
         justify-content: center;

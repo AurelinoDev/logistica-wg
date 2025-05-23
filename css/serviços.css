@@ -7,19 +7,24 @@
     src: url(../font/Inter.ttf);
 }
 
+.menu-responsivo{
+  display: none;
+}
 
-:root {
-  --dourado-100: #D9BB62;
-  --dourado-200: #D9B166;
-  --dourado-300: #BF9A56;
-  --withe: #FFFFFF;
-  --black: #000000;
-  --interRegular: 'Inter';
-  --interBold: 'Inter';
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.imagem-responsiva{
+  width: 140px;
+  height: 140px;
+  background-image: url(../img/logo.png);
+  background-size: cover;
 }
 
 .container{
-  /* border: 1px solid red; */
   width: 100%;
   min-height: 280px;
   display: flex;
@@ -28,7 +33,6 @@
 
 .servico{
   margin-top: 50px;
-  /* border: 1px solid red; */
   max-width: 1180px;
   max-height: 410px;
   padding-bottom: 50px;
@@ -105,7 +109,7 @@
 .frase-serviço h1{
   font-size: 45px;
 }
+
 .frase-serviço p{
   font-size: 30px;
 }
-

@@ -7,6 +7,8 @@
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
    <link rel="stylesheet" href="../css/contatos.css">
    <link rel="stylesheet" href="../css/contatos-mediaquery.css">
+    <script src="https://kit.fontawesome.com/e0b8a276c3.js" crossorigin="anonymous"></script>
+
   <title>Contatos</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
@@ -19,15 +21,16 @@
 
     <header>
 
-        <a href="index.html"><img src="../img/logo.png"></a>
+        <!-- Código responsivo -->
+        <a href="index.html">
+            <div class="imagem-responsiva">
+                <!-- imagem chamada no css/sobre-nos-mediaquery.css -->
+            </div>
+        </a>
 
-         <!-- Código novo -->
-        <div class="imagem-responsiva">
-            <!-- imagem chamada no css/contatos-mediaquery.css -->
-        </div>
-
-        <div class="menu-resposivo">
+        <div class="menu-responsivo">
             <!-- futuramente alterado -->
+            <i class="fa-solid fa-bars"></i>
         </div>
 
         <ul>
@@ -59,33 +62,26 @@
             </p>
 
             <!-- Código novo -->
-            <div class="botao-contato">
-                <div class="icone">
-                     <i class="fi fi-rr-envelope"></i>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=diogo_holanda2024@hotmail.com&su=Contato%20pelo%20site" target="_blank">
+                <div class="botao-contato">
+                    <div class="icone">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="p-icone">
+                        E-mail
+                    </div>
                 </div>
-                <div class="p-icone">
-                    E-mail
-                </div>
-            </div>
-            <div class="botao-contato">
-                <div class="icone">
-                    <i class="fi fi-brands-whatsapp Whatsapp"></i>
-                </div>
-                <div class="p-icone">
-                    WhatsApp
-                </div>
-            </div>
-     
-            <!-- Código antigo -->
-            <!-- <a href="https://mail.google.com/mail/?view=cm&fs=1&to=diogo_holanda2024@hotmail.com&su=Contato%20pelo%20site" target="_blank">
-                <i class="fi fi-rr-envelope"></i>
-                <p>E-mail</p>
             </a>
             <a href="https://wa.link/atubds" target="_blank">
-                <i class="fi fi-brands-whatsapp Whatsapp"></i>
-                <p>WhatsApp</p>
-            </a> -->
-    
+                <div class="botao-contato">
+                    <div class="icone">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div class="p-icone">
+                        WhatsApp
+                    </div>
+                </div>
+            </a>
     </div>
   
     <footer>

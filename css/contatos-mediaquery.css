@@ -1,4 +1,4 @@
-@media screen and (max-width: 490px){
+@media screen and (max-width: 760px){
 
     ul{
         display: none;
@@ -31,8 +31,8 @@
     }
 
     main{
-        min-height: 90vh;
-        max-height: 100vh;
+        width: 100%;
+        height: fit-content;
         /* border: 1px solid red; */
     }
 
@@ -57,19 +57,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 300px;
-        /* border: 1px solid red; */
+        height: fit-content;
     }
 
     #text-contato h2 {
         margin-top: 50px;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     #text-contato p {
         text-align: center;
         margin-top: 15px;
-        font-size: 15px;
+        font-size: 1.2rem;
         font-weight: 400;
         padding-bottom: 30px;
     }

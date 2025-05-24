@@ -1,13 +1,6 @@
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
 @import url(index.css);
-*{
-    margin: 0;
-}
-
-/* * {
-  outline: 1px solid green;
-} */
 
 /* css contato */
 
@@ -53,58 +46,27 @@ header{
 }
 
 #text-contato{
-  height: 50vh;
+  height: fit-content;
   margin-top: 80px;
   width: 100%;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* font-weight: bold; */
 }
 
 #text-contato h2 {
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 #text-contato p {
   text-align: center;
-  margin-top: 15px;
-  font-size: 20px;
+  margin-top: 2px;
+  font-size: 1.5rem;
   font-weight: 400;
   padding-bottom: 30px;
 }
-
-/* #text-contato a {
-  border: 1px solid red;
-}
-#text-contato a {
-  background-color: #000;
-  padding: 10px;
-  text-decoration: none;
-  margin: 10px;
-  border-radius: 10px;
-  width: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-} */
-
-/* #text-contato a > p{
-  font-size: 19px;
-  font-weight: bold;
-  color: #D9BB62;
-  border: 1px solid red;
-} */
-
-/* #text-contato i{
-  border: 1px solid red;
-  font-size: 30px;
-} */
-
-
 
 /* Código de Lucas */
 .botao-contato{

@@ -1,5 +1,5 @@
 /* Responsividade para smartphones */
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 760px) {
     ul{
         display: none;
     }
@@ -33,15 +33,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        
     }
 
     .servico{
-        width: 300px;
+        width: 80%;
         height: 250px;
         border-radius: 25px;
-        /* background-image: url(../img/serviço2.png);
-        background-size: cover; */
         border: 1px solid red;
     }
     
@@ -82,5 +79,11 @@
         text-align: center;
         font-size: 0.9rem;
         font-weight: normal;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .servico{
+        
     }
 }

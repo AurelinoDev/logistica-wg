@@ -39,7 +39,7 @@ a:hover{
 
 main{
     width: 100%;
-    height: 200vh;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -48,15 +48,17 @@ main{
 
 .secao-informacao{
     width: 100%;
-    height: 230px;
+    padding: 20px 0px 20px 0px;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .informacao{
-    width: 65rem;
-    height: 250px;
+    width: 70%;
+    height: fit-content;
+    padding: 0px 0px 20px 0px;
     border-radius: 25px;
     border: 2px solid var(--dourado-300);
     animation: animacao-opacidade 1s normal;
@@ -68,7 +70,6 @@ main{
     align-items: center;
     margin: 15px 0px 0px 0px;
     border-radius: 25px 25px 0px 0px;
-    /* border: 1px solid red; */
 }
 
 .icone{
@@ -81,7 +82,6 @@ main{
     justify-content: center;
     animation: animacao-opacidade 1s normal;
     margin: -1px 0px 0px 44px;
-    /* border: 1px solid red; */
 }
 
 .titulo{
@@ -91,25 +91,25 @@ main{
 }
 
 .descricao-titulo{
-    /* border: 1px solid red; */
     font-family: var(--interRegular);
     font-size: 1.4rem;
     width: 90%;
-    margin: 10px 0px 0px 60px;
+    margin: 2px 0px 0px 60px;
 }
 
 .secao-valores{
     width: 100%;
-    height: 350px;
-    /* border: 1px solid red; */
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    /* border: 1px solid red; */
+
 }
 
 .valores{
-    width: 65rem;
+    width: 70%;
     height: 50px;
     border-radius: 25px;
     border: 2px solid var(--dourado-300);
@@ -117,21 +117,25 @@ main{
     align-items: center;
     justify-content: center;
     animation: animacao-opacidade 0.5s normal;
+    /* border: 1px solid red; */
+
 }
 
 #topicos-valores{
-    width: 65rem;
-    height: 200px;
+    width: 100%;
+    height: 270px;
+    margin-top: -10px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
     /* border: 1px solid red; */
 }
 
 .topico{
     font-family: var(--interRegular);
-    width: 30rem;
-    margin: 20px 0px 20px 20px;
+    width: 45%;
+    margin: 10px 10px 10px 10px;
     height: 50px;
     display: flex;
     align-items: center;
@@ -139,7 +143,10 @@ main{
     border-radius: 25px;
     border: 2px solid var(--dourado-300);
     animation: animacao-opacidade 1s normal;
+}
 
+.topico p{
+    font-size: 1.2rem;
 }
 
 footer{

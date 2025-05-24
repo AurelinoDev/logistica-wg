@@ -54,7 +54,8 @@ header{
   padding: 20px;
   margin-bottom: 30px;
   background-color: var(--withe);
-  border: 1px solid var(--black);
+  border: 2px solid var(--black);
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
   color: var(--dourado-300);
   cursor: pointer;
   font-weight: bold;

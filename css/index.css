@@ -2,7 +2,6 @@
     font-family: 'Inter';
     src: url(../font/Inter.ttf);
 }
-
 :root {
   --dourado-100: #D9BB62;
   --dourado-200: #D9B166;
@@ -19,10 +18,6 @@ body{
   padding: 0;
   font-family: 'Inter', sans-serif;
 }
-
-/* * {
-  outline: 1px solid limegreen;
-} */
 
 /* Inicio */
 
@@ -71,7 +66,6 @@ a:hover{
 
 /* slides */
 
-
 .slider {
   position: relative;
   width: 100%;
@@ -90,41 +84,49 @@ a:hover{
 }
 
 .slide {
-  width: 1200%;
-  /* flex-shrink: 0; */
-  /* position: relative; */
+  width: 1200px;
+  position: relative;
 }
 
 .slide img {
   width: 1200px;
   height: 100%;
-  /* object-fit: cover; */
+  object-fit: cover;
 }
 
 .slide h1 {
   position: absolute;
+  width: 1200px;
+  text-align: center;
+  font-size: 45px;
   bottom: 50px;
   left: 50%;
-  transform: translateX(-50%);
   color: white;
-  background: rgba(0,0,0,0.6);
-  padding: 10px 20px;
-  border-radius: 10px;
-  opacity: 0;
 }
 
-/* Navegação manual */
-.navigation-manual {
+/* Navegação manual & Navegação automática */
+.navigation-manual{
   position: absolute;
   width: 100%;
   bottom: 20px;
   display: flex;
   justify-content: center;
   gap: 10px;
-  z-index: 10;
+  z-index: 2;
+}
+.navigation-auto{
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 1;
 }
 
-.manual-btn {
+
+.manual-btn{
+
   border: 2px solid var(--dourado-100);
   width: 40px;
   height: 10px;
@@ -134,6 +136,15 @@ a:hover{
   background: transparent;
 }
 
+.auto-btn1, .auto-btn2, .auto-btn3 {
+  border: 2px solid var(--dourado-100);
+  width: 40px;
+  height: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: transparent;
+}
 .manual-btn:hover {
   background: var(--withe);
 }
@@ -152,28 +163,30 @@ input[type="radio"] {
   margin-left: -200%;
 }
 
-/* #radio1:checked ~ .navigation-manual{
+/* O slide que estiver, o botão fica branco*/
+#radio1:checked ~ .navigation-auto .auto-btn1{
   background-color: var(--withe);
 }
-#radio2:checked ~ .navigation-auto {
+#radio2:checked ~ .navigation-auto .auto-btn2{
   background-color: var(--withe);
 }
-#radio3:checked ~ .navigation-auto {
+#radio3:checked ~ .navigation-auto .auto-btn3 {
   background-color: var(--withe);
-}  */
+} 
 
 /* Título animado */
 @keyframes fadeUp {
   0% {
     opacity: 0;
-    transform: translate(-50%, 30px);
+    transform: translate(200px);
   }
   100% {
     opacity: 1;
-    transform: translate(-50%, 0);
+    transform: translate(-50%);
   }
 }
 
+/* Aplicar animação apenas no H1 */
 #radio1:checked ~ .slides .slide:nth-child(1) h1,
 #radio2:checked ~ .slides .slide:nth-child(2) h1,
 #radio3:checked ~ .slides .slide:nth-child(3) h1 {
@@ -191,7 +204,7 @@ input[type="radio"] {
 .linha{
   border: 2px solid var(--dourado-100);
   border-radius: 8px;
-  width: 928px;
+  width: 75%;
   margin: auto;
   margin-top: 20px;
 }
@@ -204,8 +217,8 @@ input[type="radio"] {
   gap: 8px;
   margin: auto;
   margin-top: 50px;
-  width: 1340px;
-  height: 500px;
+  width: 100%;
+  flex-wrap: wrap;
   margin-bottom: 100px;
 }
 .informacoes {
@@ -233,7 +246,7 @@ input[type="radio"] {
   font-weight: bold;
 }
 
-/* BOTÃO-LINK "CONFIRA" */
+/* Botão Confira */
 .confira {
   display: flex;
   align-items: center;
@@ -267,6 +280,7 @@ input[type="radio"] {
   display: inline-block;
   animation: slideRight 0.6s ease-in-out infinite alternate;
 }
+
 /* footer */
 
 footer{
@@ -277,33 +291,24 @@ footer{
   color: var(--dourado-100);
   background-color: #000;
   height: 120px;
+  margin: auto;
   font-size: 1.2rem;
 }
 
 footer p{
+    text-align: center;
     font-size: 1.1rem;
     font-weight: bold;
     font-family: var(--interRegular);
     color: var(--dourado-100);
 }
 
+/* Animação da seta do botão Confira */
 @keyframes slideRight {
   from {
     transform: translateX(0);
   }
   to {
     transform: translateX(8px);
-  }
-}
-
-/* Animação */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate(-50%, 30px);
-  }
-  to {
-    opacity: 1;
-    transform: translate(-50%, 0);
   }
 }

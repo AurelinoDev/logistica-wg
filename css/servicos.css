@@ -7,6 +7,11 @@
     src: url(../font/Inter.ttf);
 }
 
+/* apagando imagens responsivas */
+#imagem-400px, #imagem-600px{
+  display: none;
+}
+
 .menu-responsivo{
   display: none;
 }
@@ -30,13 +35,12 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
 }
 
 .servico{
   margin: 50px 0px 50px 0px;
   width: 85%;
-  height: 300px;
+  height: 400px;
   background-image: url(../img/serviço2.jpg);
   background-size: cover;
 }
@@ -44,11 +48,15 @@ header{
 .container2 {
   max-width: 1020px;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .botao {
   position: relative;
-  width: 100%;
+  width: 90%;
   padding: 20px;
   margin-bottom: 30px;
   background-color: var(--withe);
@@ -64,7 +72,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.2s ease;
+  /* transition: background 0.2s ease; */
 }
 
 .botao:hover{
@@ -82,6 +90,7 @@ header{
 }
 
 .descricao {
+  width: 87%;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease, padding 0.3s ease;
@@ -94,7 +103,6 @@ header{
 
 .descricao.ativa {
   margin-top: -20px;
-  /* border: 1px solid red; */
   max-height: 500px;
   padding: 10px;
   margin-bottom: 20px;

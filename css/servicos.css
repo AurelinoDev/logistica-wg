@@ -27,21 +27,28 @@ header{
 .container{
   width: 100%;
   min-height: 280px;
+  max-height: 480px;
   display: flex;
+  align-items: center;
   justify-content: center;
+  /* border: 1px solid red; */
 }
 
 .servico{
-  margin-top: 50px;
+  margin: 50px 0px 50px 0px;
+  /* min-width: 900px; */
   max-width: 1180px;
   max-height: 410px;
+  min-height: 380px;
   padding-bottom: 50px;
-}
-.servico img{
   width: 100%;
-  height: auto;
   display: block;
+  background-image: url(../img/serviço2.png);
+  background-size: cover
 }
+/* .servico img{
+  
+} */
 
 .container2 {
   max-width: 1020px;
@@ -63,6 +70,9 @@ header{
   text-align: center;
   box-sizing: border-box;
   min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: background 0.2s ease;
 }
 

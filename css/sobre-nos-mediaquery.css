@@ -32,7 +32,8 @@
     }
 
     main{
-        height: 220vh;
+        min-height: 110vh;
+        max-height: 110vh;
         justify-content: space-evenly;
     }
 

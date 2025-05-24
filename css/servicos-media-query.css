@@ -1,0 +1,86 @@
+/* Responsividade para smartphones */
+@media screen and (max-width: 490px) {
+    ul{
+        display: none;
+    }
+    
+    header{
+        display: flex;
+        align-items: center;
+    }
+
+    .imagem-responsiva{
+        display: flex;
+        width: 140px;
+        height: 140px;
+        background-image: url(../img/logo.png);
+        background-size: cover;
+        margin: 0px 0px 0px 20px;
+    }
+
+    .menu-responsivo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 20px 0px 0px;
+        width: 50px;
+        height: 50px;
+        font-size: 1.7rem;
+        color: var(--dourado-300);
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .servico{
+        width: 300px;
+        height: 250px;
+        border-radius: 25px;
+        /* background-image: url(../img/serviço2.png);
+        background-size: cover; */
+        border: 1px solid red;
+    }
+    
+    .container2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .botao{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .botao > p{
+        font-size: 1.2rem;
+    }
+
+    .descricao{
+        width: 82%;
+        font-size: 1rem;
+    }
+    
+    .frase-serviço h1{
+        font-size: 25px;
+    }
+
+    .frase-serviço p{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    footer p{
+        width: 80%;
+        text-align: center;
+        font-size: 0.9rem;
+        font-weight: normal;
+    }
+}

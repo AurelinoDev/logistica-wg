@@ -7,6 +7,11 @@
     src: url(../font/Inter.ttf);
 }
 
+/* apagando imagens responsivas */
+#imagem-400px, #imagem-600px{
+  display: none;
+}
+
 .menu-responsivo{
   display: none;
 }
@@ -26,38 +31,32 @@ header{
 
 .container{
   width: 100%;
-  min-height: 280px;
-  max-height: 480px;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 1px solid red; */
 }
 
 .servico{
   margin: 50px 0px 50px 0px;
-  /* min-width: 900px; */
-  max-width: 1180px;
-  max-height: 410px;
-  min-height: 380px;
-  padding-bottom: 50px;
-  width: 100%;
-  display: block;
-  background-image: url(../img/serviço2.png);
-  background-size: cover
+  width: 85%;
+  height: 400px;
+  background-image: url(../img/serviço2.jpg);
+  background-size: cover;
 }
-/* .servico img{
-  
-} */
 
 .container2 {
   max-width: 1020px;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .botao {
   position: relative;
-  width: 100%;
+  width: 90%;
   padding: 20px;
   margin-bottom: 30px;
   background-color: var(--withe);
@@ -73,7 +72,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.2s ease;
+  /* transition: background 0.2s ease; */
 }
 
 .botao:hover{
@@ -91,6 +90,7 @@ header{
 }
 
 .descricao {
+  width: 87%;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease, padding 0.3s ease;
@@ -103,7 +103,6 @@ header{
 
 .descricao.ativa {
   margin-top: -20px;
-  /* border: 1px solid red; */
   max-height: 500px;
   padding: 10px;
   margin-bottom: 20px;
@@ -118,9 +117,10 @@ header{
 }
 
 .frase-serviço h1{
-  font-size: 45px;
+  font-size: 2.5rem;
 }
 
 .frase-serviço p{
-  font-size: 30px;
+  margin: 10px 0px 0px 0px;
+  font-size: 1.5rem;
 }

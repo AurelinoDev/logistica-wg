@@ -13,6 +13,10 @@
   --interBold: 'Inter';
 }
 
+.dourado{
+  color: var(--dourado-100);
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -34,6 +38,46 @@ header{
   height: 140px;
   background-image: url(../img/logo.png);
   background-size: cover;
+}
+
+.menu-lateral{
+  background-color: var(--black);
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -250px;
+  z-index: 3;
+  transition: all 0.7s;
+}
+
+.aparecer{
+    right: 0 !important;
+}
+
+#fechar{
+  /* border: 1px solid red; */
+  /* font-family: var(--interBold); */
+  color: var(--dourado-100);
+  width: 40px;
+  text-align: center;
+  font-size: 30px;
+  background: transparent;
+  border: 1px solid var(--dourado-100);
+}
+
+.item-menu{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter;
+  margin: 50px;
+  color: var(--dourado-300);
+}
+
+.item-menu a{
+  font-size: 25px;
 }
 
 header img{
@@ -124,9 +168,7 @@ a:hover{
   z-index: 1;
 }
 
-
 .manual-btn{
-
   border: 2px solid var(--dourado-100);
   width: 40px;
   height: 10px;

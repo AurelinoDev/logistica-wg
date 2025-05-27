@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
 <link rel="stylesheet" href="../css/contatos.css">
@@ -28,11 +29,25 @@
             </div>
         </a>
 
+        <div id="menu-lateral" class="menu-lateral">
+          <button id="fechar" onclick="fecharMenu()"> x </button>
+          <div class="item-menu">
+            <a href="index.html">Início</a>
+          </div>
+          <div class="item-menu">
+            <a href="sobre-nos.html">Sobre Nós</a>
+          </div>
+          <div class="item-menu">
+            <a href="servicos.html">Serviços</a>
+          </div>
+          <div class="item-menu">
+            <a href="contatos.html">Contatos </a>
+          </div>
+        </div>
         <div class="menu-responsivo">
             <!-- futuramente alterado -->
-            <i class="fa-solid fa-bars"></i>
+              <i class="fa-solid fa-bars" onclick="abrirMenu()"></i>
         </div>
-
         <ul>
             <a href="index.html">Inicio</a>
             <a href="sobre-nos.html">Sobre Nós</a>
@@ -91,3 +106,15 @@
       </p>
     </footer>
 </body>
+<script>
+		function abrirMenu() {
+			var minhaDiv = document.getElementById("menu-lateral");
+			minhaDiv.classList.add("aparecer");
+		}
+
+		function fecharMenu() {
+			var minhaDiv = document.getElementById("menu-lateral");
+			minhaDiv.classList.remove("aparecer");
+		}
+
+	</script>

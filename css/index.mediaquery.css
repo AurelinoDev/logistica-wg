@@ -29,7 +29,6 @@
         font-size: 1.7rem;
         color: var(--dourado-300);
     }
-
     .saiba {
         margin-top: -50px;
     }
@@ -84,5 +83,40 @@
         text-align: center;
         font-size: 0.9rem;
         font-weight: normal;
+    }
+}
+  @media (min-width: 491px) and (max-width: 1024px) {
+    .slider{
+        width: 90%;
+        max-height: 400px;
+        overflow: hidden;
+    }
+    /* .slides:checked{
+        width: 100%;
+    } */
+     .slides img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .slide h1{
+        bottom: 27px;
+        width: 100%;
+        font-size: 30px;
+    }
+     .cartoes{
+        width:100%;
+        gap: 20px;
+        border-radius: 10px;
+    }
+    .informacoes{
+        width: auto;
+        height: 470px;
+    }
+}
+
+@media (min-width: 1024px){
+    .slides img{
+        width: 100%;
+        object-fit: cover;
     }
 }

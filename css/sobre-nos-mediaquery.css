@@ -111,3 +111,29 @@
     }
 }
 
+@media screen and (max-width: 400px){
+    .icone-titulo{
+        flex-direction: column;
+        justify-content: center;
+        margin: 15px 0px 0px 0px;
+        padding: 0px 0px 10px 0px;
+    }
+
+    .titulo, .icone{
+        margin: 0px 3px 0px 3px;
+        font-size: 1.5rem;
+    }
+
+    .valores{
+        font-size: 1.5rem;
+    }
+
+    .titulo{
+        text-align: center;
+    }
+
+    .topico p{
+        font-weight: 300;
+    }
+}
+

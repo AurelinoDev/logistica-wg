@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Inter';
-    src: url(../font/Inter.ttf);
+    src: url(./font/Inter.ttf);
 }
 :root {
   --dourado-100: #D9BB62;
@@ -36,7 +36,7 @@ header{
 .imagem-responsiva{
   width: 140px;
   height: 140px;
-  background-image: url(../img/logo.png);
+  background-image: url(./img/logo.png);
   background-size: cover;
 }
 

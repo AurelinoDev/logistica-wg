@@ -20,7 +20,7 @@ header{
     display: flex;
     width: 140px;
     height: 140px;
-    background-image: url(../img/logo.png);
+    background-image: url(./img/logo.png);
     background-size: cover;
 }
 

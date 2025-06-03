@@ -56,7 +56,7 @@
 
     .cartoes{
         width:85%;
-        gap: 20px;
+        gap: 25px;
     }
 
     .informacoes {
@@ -64,7 +64,14 @@
     }
 
     .informacoes img{
-        width: 90%;;
+        width: 90%;
+        object-fit: contain;
+    }
+
+    /* Mudança no confira mobile */
+    .confira{
+        /* border: 1px solid red; */
+        width: 75%;
     }
 
     .navigation-manual{
@@ -112,16 +119,16 @@
     }
      .cartoes{
         width:100%;
-        gap: 20px;
+        gap: 30px;
         border-radius: 10px;
     }
     .informacoes{
         width: auto;
-        height: 470px;
+        height: 490px;
     }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1025px){
     .slider{
         width: 95%;
     }

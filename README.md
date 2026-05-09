@@ -57,7 +57,7 @@ Durante o desenvolvimento deste projeto, trabalhei:
 
 Acesse o projeto online:
 
-[Clique aqui]((https://logistica-wg.vercel.app/))
+https://logistica-wg.vercel.app/
 
 ---
 ## 👨‍💻 Desenvolvedores

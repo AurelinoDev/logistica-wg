@@ -26,11 +26,11 @@ Site institucional desenvolvido para uma empresa de consultoria e monitoramento 
 
 ### Desktop
 
-![Preview Desktop](./imagem/tela1.png)
+![Preview Desktop](./img/tela1.png)
 
 ### Mobile
 
-![Preview Mobile](./imagem/tela2.png)
+![Preview Mobile](./img/tela2.png)
 
 ---
 
